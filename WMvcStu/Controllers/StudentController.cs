@@ -26,8 +26,8 @@ namespace WMvcStu.Controllers
         [HttpPost]
         public ActionResult Create(StudentViewModel pro)
         {
-            StudentClient CC = new StudentClient();
-            CC.Create(pro.student);
+            StudentClient CiC = new StudentClient();
+            CiC.Create(pro.student);
             return RedirectToAction("Index");
         }
 
